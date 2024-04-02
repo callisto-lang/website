@@ -1,0 +1,61 @@
+/* https://lospec.com/palette-list/crazy-08 */
+
+body {
+    font-family: sans-serif;
+    margin: 0px;
+    background-color: #dedfd5;
+    color: #21202a;
+}
+
+.topBar {
+    height: 50px;
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    background-color: #754e89;
+    color: #dedfd5;
+    align-items: center;
+    justify-content: center;
+}
+
+.topBarContents {
+    min-width: 750px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    height: 100%;
+}
+
+.topBarButton {
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+}
+
+.topBarButton a {
+    text-decoration: none;
+    color: #dedfd5;
+}
+
+.topBarButton:hover {
+    background-color: #AAA;
+}
+
+.topBarTitle {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.pageContents {
+    margin: auto;
+    min-width: 750px;
+    max-width: 750px;
+}
+
+.code {
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: monospace;
+}
