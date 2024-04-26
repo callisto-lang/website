@@ -30,13 +30,13 @@ body {
     display: flex;
     align-items: center;
     min-height: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
 }
 
 .topBarButton a {
     text-decoration: none;
     color: #dedfd5;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .topBarButton:hover {
