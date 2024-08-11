@@ -2,44 +2,39 @@
 <html>
     <head>
         <title>Callisto</title>
-        <meta name="og:title" content="Callisto">
-        <meta name="og:description" content="A concatenative programming language inspired by YSL-C3 and Forth">
+        <meta name="og:title" content="The Callisto programming language">
+        <meta name="og:description" content="A low-level concatenative programming language">
         <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-        <div class="topBar">
-            <div class="topBarContents">
-                <p class="topBarTitle">Callisto</p>
-                <div class="topBarButton">
-                    <a href="https://github.com/callisto-lang">GitHub</a>
-                </div>
-                <div class="topBarButton">
-                	<a href="/docs">Docs</a>
-                </div>
-            </div>
-        </div>
-        <div class="pageContents">
-            <h2>The Callisto programming language</h2>
-            <p>Callisto is a concatenative, low-level, compiled programming language that is inspired by Forth</p>
+        <div class="contents">
+            <img src="/logo_shadow.png" class="centerImage" width="200px" height="200px">
+            <p style="text-align: center;">
+                <a href="https://github.com/callisto-lang">GitHub</a>
+                •
+                <a href="https://callisto.mesyeti.uk/docs">Docs</a>
+            </p>
+            <h1>About</h1>
+            <p>Callisto is a compiled, low-level, concatenative language inspired by Forth.</p>
             <p>Currently, the compiler supports compiling for these targets:</p>
             <ul>
-                <li>x86 real mode/MS-DOS</li>
-                <li>x86_64 Linux</li>
+                <li>x86_64 - Linux and macOS</li>
+                <li>x86 real mode - MS-DOS and bare metal</li>
                 <li><a href="https://100r.co/site/uxn.html">Uxn</a></li>
             </ul>
-            <h2>Examples</h2>
-            <h4>Hello world</h4>
-            <div class="code">
-include "cores/select.cal"<br>
-include "std/io.cal"<br>
-<br>
-"Hello, world!" printstr
-            </div>
-            <p>More examples can be viewed <a href="https://github.com/callisto-lang/compiler/tree/main/examples">here</a></p>
-            <h2>Downloads</h2>
-            <p>You can download the Callisto compiler from <a href="https://github.com/callisto-lang/compiler/releases">GitHub</a></p>
-            <hr>
-            <small style="text-align: right;"><p>Website source code on <a href="https://github.com/callisto-lang/website">GitHub</a></p></small>
+            <p>
+                Callisto also has a subset called CallistoScript, which is compiled to
+                scripting languages but remains somewhat low-level. Right now, CallistoScript
+                only supports compiling to Lua.
+                <a href="https://https://callisto.mesyeti.uk/docs/language/callistoscript/">Learn more</a>
+            </p>
+            <h1>Examples</h1>
+            <h2>Hello World</h2>
+            <code><pre>
+include "cores/select.cal"
+include "std/io.cal"
+
+"Hello, world!\n" printstr</pre></code>
         </div>
     </body>
 </html>
