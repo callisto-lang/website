@@ -1,5 +1,6 @@
 body {
-    background-color: #202124;
+    background-color: #000000;
+    background-image: url("bg.jpg");
     font-family: sans-serif;
     color: white;
 }
@@ -15,8 +16,10 @@ a, a:visited {
 }
 
 .contents {
-    width: 800px;
+	background-color: #202124;
+    width: 820px;
     margin: auto;
+    padding: 5px 20px;
 }
 
 .centerImage {
