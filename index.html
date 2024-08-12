@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Callisto</title>
-        <meta name="og:title" content="The Callisto programming language">
-        <meta name="og:description" content="A low-level concatenative programming language">
-        <meta name="og:image" content="/logo_shadow.png">
-        <link rel="stylesheet" href="/style.css">
-        <link rel="icon" href="/logo_shadow.png">
-    </head>
-    <body>
-        <img src="/logo_shadow.png" class="centerImage" width="200px" height="200px">
-        <p style="text-align: center;">
-            <a href="https://github.com/callisto-lang">GitHub</a>
-            -
-            <a href="https://callisto.mesyeti.uk/docs">Docs</a>
-        </p>
-        <div class="contents">
-            <h1>About</h1>
-            <p>Callisto is a compiled, low-level, concatenative language inspired by Forth.</p>
-            <p>Currently, the compiler supports compiling for these targets:</p>
-            <ul>
-                <li>x86_64 - Linux and macOS</li>
-                <li>x86 real mode - MS-DOS and bare metal</li>
-                <li><a href="https://100r.co/site/uxn.html">Uxn</a></li>
-            </ul>
-            <p>
-                Callisto also has a subset called CallistoScript, which is compiled to
-                scripting languages but remains somewhat low-level. Right now, CallistoScript
-                only supports compiling to Lua.
-                <a href="https://callisto.mesyeti.uk/docs/language/callistoscript/">Learn more</a>
-            </p>
-            <h1>Examples</h1>
-            <h2>Hello World</h2>
-            <code><pre>
+	<head>
+		<title>Callisto</title>
+		<meta name="og:title" content="The Callisto programming language">
+		<meta name="og:description" content="A low-level concatenative programming language">
+		<meta name="og:image" content="/logo_shadow.png">
+		<link rel="stylesheet" href="/style.css">
+		<link rel="icon" href="/logo_shadow.png">
+	</head>
+	<body>
+		<img src="/logo_shadow.png" class="centerImage" width="200px" height="200px">
+		<p style="text-align: center;">
+			<a href="https://github.com/callisto-lang">GitHub</a>
+			-
+			<a href="https://callisto.mesyeti.uk/docs">Docs</a>
+		</p>
+		<div class="contents">
+			<h1>About</h1>
+			<p>Callisto is a compiled, low-level, concatenative language inspired by Forth.</p>
+			<p>Currently, the compiler supports compiling for these targets:</p>
+			<ul>
+				<li>x86_64 - Linux and macOS</li>
+				<li>x86 real mode - MS-DOS and bare metal</li>
+				<li><a href="https://100r.co/site/uxn.html">Uxn</a></li>
+			</ul>
+			<p>
+				Callisto also has a subset called CallistoScript, which is compiled to
+				scripting languages but remains somewhat low-level. Right now, CallistoScript
+				only supports compiling to Lua.
+				<a href="https://callisto.mesyeti.uk/docs/language/callistoscript/">Learn more</a>
+			</p>
+			<h1>Examples</h1>
+			<h2>Hello World</h2>
+			<code><pre>
 include "cores/select.cal"
 include "std/io.cal"
 
 "Hello, world!\n" printstr</pre></code>
-            <h1>Documentation</h1>
-            <p>
-                Web documentation is <a href="/docs">here</a>. For offline documentation,
-                clone <a href="https://github.com/callisto-lang/docs">this repo</a> and follow the
-                instructions in the README file
-            </p>
-        </div>
-    </body>
+			<h1>Documentation</h1>
+			<p>
+				Web documentation is <a href="/docs">here</a>. For offline documentation,
+				clone <a href="https://github.com/callisto-lang/docs">this repo</a> and follow the
+				instructions in the README file
+			</p>
+		</div>
+	</body>
 </html>
